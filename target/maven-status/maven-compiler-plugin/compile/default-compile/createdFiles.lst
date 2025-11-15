@@ -1,5 +1,4 @@
+Controlador\ControladorLogica.class
 Modelo\Contacto.class
 Vista\AgendaPersonal.class
-Controlador\ControladorLogica.class
-Controlador\ContactoFunciones.class
 Persistencia\Conexion.class

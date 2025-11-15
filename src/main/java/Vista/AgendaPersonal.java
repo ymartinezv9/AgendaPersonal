@@ -60,32 +60,30 @@ public class AgendaPersonal {
                     aplicacion.listarContactos();
                     break;
                 case 3:
-                    System.out.print("Ingrese el nombre de la persona a modificar");
+                    System.out.print("Ingrese el nombre de la persona a modificar: ");
                     Map<String, Object> camposActualizados = new HashMap<>();
-
-                    System.out.print("Ingrese el nombre del contacto a modificar: ");
-                     nombre = leer.nextLine();
+                    nombre = leer.nextLine();
 
                     System.out.print("Nuevo teléfono?: ");
-                     telefono = leer.nextLine();
+                    telefono = leer.nextLine();
                     if (!telefono.isBlank()) {
                         camposActualizados.put("telefono", telefono);
                     }
 
                     System.out.print("Nuevo correo?: ");
-                     correo = leer.nextLine();
+                    correo = leer.nextLine();
                     if (!correo.isBlank()) {
                         camposActualizados.put("correoElectronico", correo);
                     }
 
                     System.out.print("Nuevos pasatiempos?: ");
-                     pasatiempos = leer.nextLine();
+                    pasatiempos = leer.nextLine();
                     if (!pasatiempos.isBlank()) {
                         camposActualizados.put("pasatiempos", pasatiempos);
                     }
 
                     System.out.print("Donde se conocieron: ");
-                     areaComun = leer.nextLine();
+                    areaComun = leer.nextLine();
                     if (!areaComun.isBlank()) {
                         camposActualizados.put("areaComun", areaComun);
                     }
@@ -104,17 +102,17 @@ public class AgendaPersonal {
                     break;
                 case 4:
                     aplicacion.listarContactos();
-                    
+
                     System.out.println("Ingrese nombre y apellido del contacto a eliminar");
                     nombre = leer.nextLine();
                     aplicacion.eliminarContacto(nombre);
 
                     break;
-                    
-                default:
-                    throw new AssertionError();
+
+                case 5:
+                    System.out.println("Saliendo de la aplicacion......");
             }
 
-        } while (true);
+        } while (opcion != 5);
     }
 }
