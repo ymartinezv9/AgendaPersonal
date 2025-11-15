@@ -3,7 +3,6 @@ package Modelo;
 
 public class Contacto {
     
-    private String id;
     private String nombre;
     private String telefono;
     private String correoElectronico;
@@ -13,8 +12,7 @@ public class Contacto {
     public Contacto() {
     }
 
-    public Contacto(String id, String nombre, String telefono, String correoElectronico, String pasatiempos, String areaComun) {
-        this.id = id;
+    public Contacto(String nombre, String telefono, String correoElectronico, String pasatiempos, String areaComun) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correoElectronico = correoElectronico;
@@ -22,13 +20,7 @@ public class Contacto {
         this.areaComun = areaComun;
     }
 
-    public String getId() {
-        return id;
-    }
 
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getNombre() {
         return nombre;
@@ -72,7 +64,9 @@ public class Contacto {
 
     @Override
     public String toString() {
-        return "Contacto{" + "id=" + id + ", nombre=" + nombre + ", telefono=" + telefono + ", correoElectronico=" + correoElectronico + ", pasatiempos=" + pasatiempos + ", areaComun=" + areaComun + '}';
+        return "Contacto{" + "nombre=" + nombre + ", telefono=" + telefono + ", correoElectronico=" + correoElectronico + ", pasatiempos=" + pasatiempos + ", areaComun=" + areaComun + '}';
     }
+
+
     
 }

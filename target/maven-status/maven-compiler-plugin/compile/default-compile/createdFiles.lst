@@ -1,3 +1,4 @@
-com\agenda\pumg\config\conexionFirebase.class
-com\agenda\pumg\config\Servicio.class
-com\agenda\pumg\Principal.class
+Controlador\ControladorLogica.class
+Modelo\Contacto.class
+Vista\AgendaPersonal.class
+Persistencia\Conexion.class

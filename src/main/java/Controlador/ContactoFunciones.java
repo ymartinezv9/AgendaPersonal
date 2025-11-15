@@ -1,4 +1,4 @@
-package ContactoFunciones;
+package Controlador;
 
 
 public class ContactoFunciones {
